@@ -1,24 +1,27 @@
-package com.bala.ac.in;
+package com.honor.bonus.calc.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+import com.honor.bonus.calc.Bonus;
+import com.honor.bonus.calc.Employee;
+
 @Component
-public class Manager implements Employee {
+public class Developer implements Employee {
 
 	@Autowired
-	@Qualifier("managerBonus")
-	public Bonus theBonus;
+	@Qualifier("developerBonus")
+	public Bonus thebonus;
 	
 	@Override
 	public String getDesignation() {
-		return "Manager";
+		return "Developer";
 	}
 
 	@Override
 	public int getBonus() {
-		return theBonus.getYearlyBonus();
+		return thebonus.getYearlyBonus(10,50000);
 	}
 
 }

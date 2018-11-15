@@ -1,4 +1,4 @@
-package com.bala.ac.in;
+package com.honor.bonus.calc;
 
 public interface Employee {
 	public String getDesignation();

@@ -1,6 +1,8 @@
-package com.bala.ac.in;
+package com.honor.bonus.calc.impl;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.honor.bonus.calc.Employee;
 
 public class BonusApp {
 
